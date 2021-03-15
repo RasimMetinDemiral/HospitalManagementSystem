@@ -1,1 +1,3 @@
 # HospitalManagementSystem
+
+JavaFx automation project
