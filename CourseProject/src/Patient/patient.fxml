@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="mainPanel" prefHeight="525.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Patient.PatientController">
+    <stylesheets>
+        <URL value="@patient.css" />
+    </stylesheets>
+   <children>
+      <TextField fx:id="patientId" alignment="CENTER" layoutX="207.0" layoutY="34.0" onKeyReleased="#patientIdControl" prefHeight="25.0" prefWidth="177.0" promptText="Patient ID Number" />
+      <TextField fx:id="patientName" alignment="CENTER" layoutX="207.0" layoutY="81.0" prefHeight="25.0" prefWidth="177.0" promptText="Patient Name" />
+      <TextField fx:id="patientAge" alignment="CENTER" layoutX="207.0" layoutY="168.0" onKeyReleased="#patientAgeControl" prefHeight="25.0" prefWidth="177.0" promptText="Patient Age" />
+      <TextField fx:id="patientSurname" alignment="CENTER" layoutX="207.0" layoutY="126.0" prefHeight="25.0" prefWidth="177.0" promptText="Patient Surname" />
+      <RadioButton fx:id="womenToggleButton" layoutX="221.0" layoutY="254.0" mnemonicParsing="false" text="women ">
+         <toggleGroup>
+            <ToggleGroup fx:id="genderButton" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="manToggleButton" layoutX="312.0" layoutY="254.0" mnemonicParsing="false" text="man" toggleGroup="$genderButton" />
+      <ComboBox fx:id="doctorDepartmentsBox" layoutX="207.0" layoutY="293.0" onAction="#doctorSelection" prefHeight="25.0" prefWidth="177.0" promptText="Departments" />
+      <ComboBox fx:id="doctorsBox" layoutX="108.0" layoutY="336.0" onAction="#doctorIdNumber" prefHeight="25.0" prefWidth="177.0" promptText="Doctors" />
+      <DatePicker fx:id="reservationDate" layoutX="207.0" layoutY="387.0" prefHeight="25.0" prefWidth="78.0" />
+      <Button fx:id="recordPatientButton" layoutX="207.0" layoutY="430.0" mnemonicParsing="false" onAction="#RecordPatient" prefHeight="25.0" prefWidth="78.0" text="Record" />
+      <Button fx:id="cancelButton" layoutX="300.0" layoutY="430.0" mnemonicParsing="false" onAction="#cancelButton" prefHeight="25.0" prefWidth="86.0" text="cancel" />
+      <TextField fx:id="reservationIdNumber" alignment="CENTER" layoutX="207.0" layoutY="211.0" onKeyReleased="#reservationIdControl" prefHeight="25.0" prefWidth="177.0" promptText="Reservation ID Number" />
+      <TextField fx:id="wardIdNumber" layoutX="300.0" layoutY="387.0" onKeyReleased="#wardIdControl" prefHeight="25.0" prefWidth="86.0" promptText="wardID" />
+      <ComboBox fx:id="nursesBox" layoutX="300.0" layoutY="336.0" onAction="#nurseSelection" prefHeight="25.0" prefWidth="177.0" promptText="Nurses" />
+   </children>
+</AnchorPane>

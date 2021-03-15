@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="mainPanel" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InformationPatient.InformationPatientController">
+    <stylesheets>
+        <URL value="@informationpatient.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="patientTable" prefHeight="400.0" prefWidth="669.0">
+         <columns>
+            <TableColumn fx:id="patiendIdColumn" prefWidth="116.0" text="patientId" />
+            <TableColumn fx:id="patientNameColumn" prefWidth="117.0" text="patientName" />
+            <TableColumn fx:id="patientSurnameColumn" prefWidth="100.0" text="patientSurname" />
+            <TableColumn fx:id="patientAgeColumn" prefWidth="104.0" text="patientAge" />
+            <TableColumn fx:id="patientGenderColumn" prefWidth="120.0" text="patientGender" />
+            <TableColumn fx:id="patientDateColumn" prefWidth="111.0" text="patientDate" />
+         </columns>
+         <contextMenu>
+            <ContextMenu>
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#deletePatient" text="deletePatient" />
+               </items>
+            </ContextMenu>
+         </contextMenu>
+      </TableView>
+   </children>
+</AnchorPane>

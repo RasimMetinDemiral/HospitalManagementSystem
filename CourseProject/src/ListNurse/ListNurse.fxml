@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="mainPanel" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ListNurse.ListNurseController">
+    <stylesheets>
+        <URL value="@listnurse.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="NurseTable" prefHeight="400.0" prefWidth="600.0">
+         <columns>
+            <TableColumn fx:id="nurseIdColumn" prefWidth="135.0" text="Nurse Id" />
+            <TableColumn fx:id="nurseNameColumn" minWidth="0.0" prefWidth="169.0" text="Nurse name" />
+            <TableColumn fx:id="nurseSurnameColumn" prefWidth="157.0" text="Nurse surname" />
+            <TableColumn fx:id="nurseExperimentColumn" prefWidth="138.0" text="Nurse experiment" />
+         </columns>
+         <contextMenu>
+            <ContextMenu>
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#DeleteNurse" text="delete" />
+                  <MenuItem mnemonicParsing="false" onAction="#editNurse" text="update" />
+               </items>
+            </ContextMenu>
+         </contextMenu>
+      </TableView>
+   </children>
+</AnchorPane>

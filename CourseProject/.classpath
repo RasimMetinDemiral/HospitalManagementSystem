@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="dist/CourseProject.jar"/>
+	<classpathentry kind="lib" path="dist/lib/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="dist/run1303241075/CourseProject.jar"/>
+	<classpathentry kind="lib" path="dist/run1303241075/lib/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="dist/run1314592894/CourseProject.jar"/>
+	<classpathentry kind="lib" path="dist/run1314592894/lib/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="dist/run1468708759/CourseProject.jar"/>
+	<classpathentry kind="lib" path="dist/run1468708759/lib/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="dist/run317390082/CourseProject.jar"/>
+	<classpathentry kind="lib" path="dist/run317390082/lib/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="dist/run43631376/CourseProject.jar"/>
+	<classpathentry kind="lib" path="dist/run43631376/lib/ojdbc6.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="courseproject.enterenceWindowController">
+    <stylesheets>
+        
+    </stylesheets>
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="417.0" prefWidth="586.0">
+         <children>
+            <Button fx:id="main_admin" layoutX="44.0" layoutY="282.0" mnemonicParsing="false" onAction="#adminPaneliAc" prefHeight="72.0" prefWidth="136.0" text="Admin" />
+            <Button fx:id="main_doc" layoutX="399.0" layoutY="282.0" mnemonicParsing="false" onAction="#doctorPaneliAc" prefHeight="72.0" prefWidth="136.0" text="Doctor" />
+            <Button fx:id="main_res" layoutX="218.0" layoutY="282.0" mnemonicParsing="false" onAction="#reservationPanelAc" prefHeight="72.0" prefWidth="150.0" text="Reservation" />
+            <Label alignment="CENTER" layoutX="31.0" layoutY="38.0" prefHeight="17.0" prefWidth="524.0" text="HOSPITAL MANAGEMENT" textFill="#275082f1">
+               <font>
+                  <Font size="36.0" />
+               </font></Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="218.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../hospitalIcon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
